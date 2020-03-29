@@ -4,7 +4,7 @@ body {
     margin: 60px auto 40px auto;/*上 右 下 左*/
     max-width:1000px;
     border:solid;
-    border-color: dodgerblue;
+    border-color: silver;
 
 }
 
@@ -13,7 +13,8 @@ header{
 }
 
 form{
-    background-color: dodgerblue;
+    background-color: white;
+    padding: 20px;
 }
 
 a{
