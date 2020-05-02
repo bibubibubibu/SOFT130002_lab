@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<style>
+    button {
+        width: 80px;
+        height: 30px;
+    }
+    input {
+        width: 500px;
+        height: 30px;
+    }
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试Lab6</title>
+    <script src="../../SOFT130002_lab/lab5/lab05.js"></script>
+</head>
+<body>
+<p>
+    <button onclick="testTime()">开始计时</button>
+    <span id = 'showtime'>1</span>
+</p>
+
+<p>
+    <label for='phone'>手机号</label>
+    <input type='text' id = 'phone' value="13902712345"><br>
+    <label for="mail">邮箱</label>
+    <input type="text" id = 'mail' value="stupid996@fudan.edu.cn"><br>
+    <button onclick="testMail(document.getElementById('phone').value,document.getElementById('mail').value)">提交</button>
+    <span id = 'output'> 结果 </span>
+</p>
+
+<p>
+    <label for='sentence'>输入字符串</label>
+    <input type='text' id = 'sentence' value="Is is the iS is cost of of gasoline going up up">
+    <button onclick="testRedundancy(document.getElementById('sentence').value)">打印</button><br>
+    <span id="out"></span>
+</p>
+
+<p>
+    <label for='wanted'>预期输入</label>
+    <input type='text' id = 'wanted' value="7_This_is_a_test"><br>
+    <label for="actual">实际输入</label>
+    <input type="text" id = 'actual' value="_hs_s_a_es"><br>
+    <button onclick="testKeyBoard(document.getElementById('wanted').value,document.getElementById('actual').value)">测试</button>
+    <span id = 'testout'> 结果 </span>
+</p>
+
+<p>
+    <label for='reverce'>输入要翻转的字符串</label>
+    <input type='text' id = 'reverce' value="the sky is blue">
+    <button onclick="testSpecialReverse(document.getElementById('reverce').value)">翻转</button><br>
+    <span id="reverced"></span>
+</p>
+
+<p>
+    <label for='tocount'>输入要计数字符串</label>
+    <input type='text' id = 'tocount' value="abcccc">
+    <button onclick="lengthOfLongestSubstring(document.getElementById('tocount').value)">计数</button><br>
+    <span id="maxrepeat"></span>
+</p>
+
+<p>
+    <button onclick="testtwosum()">测试六</button><br>
+    <span id="findout"></span>
+</p>
+
+<p>
+    <button onclick="testInherit()">测试继承</button><br>
+</p>
+
+</body>
+</html>
+
+<script src="lab6.js"></script>
